@@ -1,5 +1,6 @@
 package com.cc.java;
 
+
 public class Cat {
  
    private String name;
@@ -32,11 +33,23 @@ public class Cat {
         if (!isFemale) {
             return Integer.toString(age);
         } else {
-        return "!#kldnf";
-    }
+        return CheckEscalationLevel();
+        }
     }
    
-
+public String CheckEscalationLevel() {
+    switch (5) {
+        case 1:
+            return "This is an inappropriate question";
+        case 2:
+            return "I've told you once!";
+        case 3:
+            return "Talk to the hand!";
+        default:
+            return "1#!?&&%";
+    }
+    
+}
 
 
 

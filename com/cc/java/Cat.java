@@ -4,37 +4,39 @@ public class Cat {
  
    private String name;
    private String furColor;
+
    private int age;
+   private boolean isFemale;
 
-    public Cat(String name, String furColor, int age) {
+
+    public Cat(String name, String furColor, int age, boolean isFemale) {
         this.name = name;
         this.furColor = furColor;
         this.age = age;
-	}
-
-    public String getName() {
-        return name;
+        this.isFemale = isFemale;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
+    public String getStringAttributes(String flag) {
+        switch (flag) {
+            case "#name":
+                return name;
+            case "#color":
+                return furColor;
+            default:
+                return "#!ERROR";
+        }
 
-    public String getFurColor() {
-        return furColor;
     }
+  
+    public String getAge() {
+        if (!isFemale) {
+            return Integer.toString(age);
+        } else {
+        return "!#kldnf";
+    }
+    }
+   
 
-    public void setFurColor(String furColor) {
-        this.furColor = furColor;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
 
 
 

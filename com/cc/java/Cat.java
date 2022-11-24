@@ -8,6 +8,7 @@ public class Cat {
 
    private int age;
    private boolean isFemale;
+   private int counter;
 
 
     public Cat(String name, String furColor, int age, boolean isFemale) {
@@ -28,7 +29,6 @@ public class Cat {
         }
 
     }
-  
     public String getAge() {
         if (!isFemale) {
             return Integer.toString(age);
@@ -37,8 +37,12 @@ public class Cat {
         }
     }
    
+
+
 public String CheckEscalationLevel() {
-    switch (5) {
+    counter++;
+
+    switch (counter) {
         case 1:
             return "This is an inappropriate question";
         case 2:
@@ -50,15 +54,6 @@ public String CheckEscalationLevel() {
     }
     
 }
-
-
-
-    
-
-
-
-    
-
 
     
 }

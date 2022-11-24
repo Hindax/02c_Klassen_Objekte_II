@@ -27,8 +27,8 @@ public class Cat {
             default:
                 return "#!ERROR";
         }
-
     }
+
     public String getAge() {
         if (!isFemale) {
             return Integer.toString(age);
@@ -36,10 +36,8 @@ public class Cat {
         return CheckEscalationLevel();
         }
     }
-   
 
-
-public String CheckEscalationLevel() {
+    private String CheckEscalationLevel() {
     counter++;
 
     switch (counter) {
